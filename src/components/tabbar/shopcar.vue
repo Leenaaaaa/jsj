@@ -1,7 +1,7 @@
 <template>
   <div>
  
-    <h1>123</h1>
+    <h1>我是购物车</h1>
 
 
  <transition>
@@ -15,23 +15,19 @@
 
 <script>
 //  es6中向外暴露成员
-export default {
-  name: 'home',
-  data () {
-    return {
-      msg: '1111'
-    }
-  }
+// export default {
+//   name: 'home',
+//   data () {
+//     return {
+//       msg: '1111'
+//     }
+//   }
 
-}
+// }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.app-container {
-    padding-top: 40px;
-  
-}
 
 
 </style>

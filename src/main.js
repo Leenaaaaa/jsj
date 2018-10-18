@@ -13,7 +13,9 @@ Vue.use(MintUI)
 import './assets/mui/css/mui.min.css'
 import './assets/mui/css/icons-extra.css'
 
-
+// 导入vue-resouce
+import VueResource  from 'vue-resource'
+Vue.use(VueResource)
 
 
 

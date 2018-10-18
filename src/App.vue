@@ -36,6 +36,13 @@ export default {
 }
 </script>
 
-<style>
+
+<style scoped>
+.app-container {
+    padding-top: 40px;
+  
+}
+
 
 </style>
+
