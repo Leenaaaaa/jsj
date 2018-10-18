@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import ZaoYang from '@/components/ZaoYang'
-import XiangYang from '@/components/XiangYang'
-import Xyyyyyy from '@/components/Xyyyyyy'
+import home from '@/components/home'
+// import XiangYang from '@/components/XiangYang'
+// import Xyyyyyy from '@/components/Xyyyyyy'
 Vue.use(Router)
 
 export default new Router({
@@ -14,19 +14,19 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/zy',
-      component: ZaoYang
+      path: '/home',
+      component: home
     },
-    {
-      path: '/xy',
-      component: XiangYang,
-      children: [
-        { 
-          path: 'xyy',
-          component: Xyyyyyy
-      }
-    ]
+    // {
+    //   path: '/xy',
+    //   component: XiangYang,
+    //   children: [
+    //     { 
+    //       path: 'xyy',
+    //       component: Xyyyyyy
+    //   }
+    // ]
       
-    }
+    // }
   ]
 })

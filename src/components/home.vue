@@ -1,12 +1,14 @@
 <template>
   <div class="app-container">
-    <mt-header fixed></mt-header>
-    <router-view>
-        11111111111
-    
-    
-    
-    </router-view>
+    <mt-header fixed title="黑马程序员·Vue项目"></mt-header>
+    <h1>123</h1>
+
+
+ <transition>
+			<router-view>
+       </router-view>
+		</transition>
+
       <!-- 底部 Tabbar 区域 -->
     <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
@@ -34,29 +36,22 @@
 <script>
 //  es6中向外暴露成员
 export default {
-  name: 'HelloWorld',
+  name: 'home',
   data () {
     return {
-      msg: 'Welcome to Your xiangyang'
+      msg: '1111'
     }
   }
+
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+.app-container {
+    padding-top: 40px;
+  
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
+
 </style>
