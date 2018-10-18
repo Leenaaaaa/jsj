@@ -11,6 +11,9 @@ Vue.use(MintUI)
 
 // vue-cli 项目中引入mui
 import './assets/mui/css/mui.min.css'
+import './assets/mui/css/icons-extra.css'
+
+
 
 
 
