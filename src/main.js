@@ -13,10 +13,18 @@ Vue.use(MintUI)
 import './assets/mui/css/mui.min.css'
 import './assets/mui/css/icons-extra.css'
 
+import moment from 'moment'
+// 定义全局的过滤器
+Vue.filter('dataFormat', function(dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
+  return moment(dataStr).format(pattern)
+})
+
 // 导入vue-resouce
 import VueResource  from 'vue-resource'
 Vue.use(VueResource)
 
+// 2.3 全局配置请求的URL根域名
+Vue.http.options.root = "http://027xin.com:8899"
 
 
 Vue.config.productionTip = false

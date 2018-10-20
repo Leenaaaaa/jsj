@@ -5,7 +5,11 @@ import homeContainer from '@/components/tabbar/homeContainer'   // @表示src这
 import member from '@/components/tabbar/member'
 import search from '@/components/tabbar/search'
 import shopcar from '@/components/tabbar/shopcar'
+import NewsList from '@/components/news/NewsList'
+import NewsInfo from '@/components/news/Newsinfo'
 Vue.use(Router)
+
+import Newsinfo from '@/components/news/Newsinfo.vue'
 
 export default new Router({
   routes: [
@@ -28,7 +32,16 @@ export default new Router({
     {
       path: '/shopcar',
       component: shopcar
+    },
+    {
+      path: '/home/NewsList',
+      component: NewsList
+    },
+    {
+      path: '/home/NewsInfo/:id',
+      component: NewsInfo
     }
+    
   ],
   linkActiveClass :'mui-active'    // 覆盖默认的路由高亮的类 默认的类
 })
